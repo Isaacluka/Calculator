@@ -116,7 +116,8 @@ function handleOperator(op){
     if(previousValue && currentValue){
         calculate()
         operator = op;
-        previousValue = resultValue;
+        resultValue = "";
+        previousValue = previousValue.toString();
         currentValue = "";
         console.log(previousValue);
     }else{
